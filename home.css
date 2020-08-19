@@ -1,0 +1,115 @@
+
+/*
+** universal reset 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+img.profile {
+    margin-top: 75px;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
+
+body {
+    background-color:white;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/*
+* Nav bar 
+*
+*
+*/
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+}
+
+.topnav a {
+    float: none;
+    display: inline-block;
+    color: #262626;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 18px 12px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+}
+
+.topnav a:hover {
+    color:blue;
+}
+
+.topnav a.active {
+    color: blue;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* Page content */
+.content {
+    padding: 16px;
+  }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 720px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 720px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
