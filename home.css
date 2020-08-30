@@ -1,10 +1,10 @@
  
-
+/* intro section */
 .intro {
     display: block;
+    text-align: center;
 }
 #profile {
-    display: block;
     object-fit: cover;
     max-height: calc(100vh - 112px);
     min-height: calc(100vh - 112px);
@@ -13,6 +13,38 @@
 
 }
 
+.name {
+    position: absolute;
+    width: 100%;
+    top: calc(112px + 15%);
+
+}
+.name p {
+    color:white;
+    font-size: 22px;
+    padding-bottom: 10px;
+    font-style: italic;
+
+}
+.name h1 {
+    color:white;
+    font-size: 70px
+
+}
+
+@media all and (max-height: 360px) {
+    .name p {
+        display: none;
+    }
+}
+@media all and (max-height: 360px) and (max-width: 882px) {
+    .name {
+        top: 112px;
+    }
+
+}
+    
+/* Contact me section */
 .contacts {
     display: block;
 }
