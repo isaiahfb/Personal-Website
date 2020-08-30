@@ -1,33 +1,22 @@
 
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function addResponsive() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+/*
+** Toggle between opening and closing the drop down menu 
+** when clicking on hamburger menu
+*/
+
+function openMenu() {
+    var x = document.getElementById("myNavbar");
+    var y = document.getElementById("hamburgermenu");
+    if (x.className === "navbar") {
       x.className += " responsive";
+      y.innerHTML = "close";
+
     } else {
-      x.className = "topnav";
+      x.className = "navbar";
+      y.innerHTML = "menu";
     }
   }
 
 
-
-
-// make the nav bar sticky
-window.onscroll = function() {stickNavBar()};
-
-function stickNavBar() {
-
-    var navbar = document.getElementById("myTopnav");
-
-    var sticky = navbar.offsetTop;
-    
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        
-    } else {
-        navbar.classList.remove("sticky");
-        
-    }
-}
 
