@@ -10,8 +10,11 @@
         <link rel = "stylesheet" href = "stylesheet.css">
         <link rel = "stylesheet" href = "home.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+       <!--fonts-->
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
 
+       <!--icons-->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
         <script src = "main.js"></script>
 
@@ -20,45 +23,45 @@
     </head>
     <body>
 
-        <h1>
+        <div class="main">
+ 
+            <nav class="navbar" id="myNavbar">
+
+                
+                <ul>
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li><a href="programming.html">Programming</a></li>
+                    <li><a href="running.html">Running</a></li>
+                    <li><a href="outdoors.html">Outdoors</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                </ul>
+
+                <a href="javascript:void(0)" class="menuicon" onclick="openMenu()">
+                    <i id="hamburgermenu" class="material-icons">menu</i>
+                </a>  
+
+            </nav>
+
+            <div class="content">
+
+
+                <div class="intro">
+                    <img id= "profile" title = "profile photo"  src="images/IMG_0396edited.JPG" alt="Profile Photo">
             
-        </h1>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                </div>
 
-        <div class="topnav" id="myTopnav">
-        <a href="home.html" class="active">Home</a>
-        <a href="programming.html">Programming</a>
-        <a href="running.html">Running</a>
-        <a href="outdoors.html">Outdoors</a>
-        <a href="photography.html">Photography</a>
-        <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
-            <i class="fa fa-bars"></i>
-        </a>
-        </div>
+                <div class="contacts">
 
+                    <img id="head-shot" title="head shot" src="images/profilephoto2.jpg" alt="Head Shot">
 
-        <div class="content">
-        
-        <div id="profileIntro">
-            <img id= "profile" title = "profile photo"  src="images/profilephoto2.jpg" alt="Profile Photo">
-            <div id = "helloBlurb">
-                <p id="helloBlurb1">
-                    Hey, I'm 
-                </p>
-                <p id="helloBlurb2"> 
-                    Isaiah Fujii Bresnihan
-                </p>
+                </div>
 
             </div>
 
-
         </div>
-        <div style="clear: both;"></div>
-        
-
-        </div>
+    
 
 
-    </body>
+     </body>
 </html>
