@@ -43,10 +43,24 @@
     }
 
 }
+@media all and (max-width: 415px) {
+    .name h1 {
+        font-size: 60px;
+    }
+}
+@media all and (max-width: 359px) {
+    .name h1 {
+        font-size: 40px;
+    }
+}
+
     
 /* Contact me section */
 .contacts {
     display: block;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
 }
 
 #head-shot {
@@ -57,4 +71,40 @@
     height: auto;
     margin: auto;
 
+}
+
+.contacts p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    color: #262626;
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin: auto;
+    max-width: 250px;
+}
+
+.social-links img{
+    height: 50px;
+    
+}
+.social-links a {
+    flex: 1 1 auto;
+}
+
+.email {
+    padding-top: 30px;
+}
+
+.email a {
+    color: #6e6e6e;
 }
