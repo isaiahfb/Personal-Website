@@ -54,12 +54,86 @@
     }
 }
 
+/* about me section */
+
+.about-me {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    align-items: center;
+}
+
+.about-me img {
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+.about-me p {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    text-align: center;
+    color: #262626;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+
+}
+
+.programming {
+    flex: 1 1 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.running {
+    padding-top: 5vh;
+    flex: 1 1 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.outdoors {
+    padding-top: 5vh;
+    flex: 1 1 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.photography {
+    padding-top: 5vh;
+    flex: 1 1 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
     
 /* Contact me section */
 .contacts {
     display: block;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding: 10vh 10vw;
     text-align: center;
 }
 
@@ -74,9 +148,9 @@
 }
 
 .contacts p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
     padding-top: 30px;
     max-width: 400px;
     width: 100%;
