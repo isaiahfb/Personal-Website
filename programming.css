@@ -51,11 +51,22 @@
 @media all and (max-height: 500px){
     .intro .title h1 { 
         max-width: 100%;
+        
     }
 }
 @media all and (max-height: 360px){
     .intro .title h1 { 
         padding-top: 0vh;
+    }
+}
+@media all and (max-height: 700px) and (max-width: 300px) {
+    .intro .title h1 {
+        font-size: 38px;
+    }
+}
+@media all and (max-height: 600px) and (max-width: 374px) {
+    .intro .title h1 {
+        font-size: 38px;
     }
 }
 @media all and (max-height: 360px ) and (max-width:640px){
