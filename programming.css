@@ -195,8 +195,11 @@
     border: 1px solid green;
 }
 
-#qualitest {
-    display: none;
+#qualitest img {
+    border: 1px solid #2c2964;
+}
+#unfiltered img {
+    border: 1px solid black;
 }
 
 /* skills section */
@@ -257,6 +260,10 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
    
+}
+
+#opencv {
+    display: none;
 }
 
 @media all and (max-width: 722px) {
