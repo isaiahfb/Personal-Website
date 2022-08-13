@@ -13,3 +13,220 @@
     text-align: center;
     margin: auto;
 }
+
+
+/* intro section */
+
+.intro {
+    display: block;
+    text-align: center;
+}
+#cover-photo {
+    object-fit: cover;
+    object-position: 100% 50%;
+    max-height: calc(100vh - 112px);
+    min-height: calc(100vh - 112px);
+    width: 100%;
+    height: auto;
+
+}
+
+@media all and (max-width: 414px)
+{
+    #cover-photo {
+        object-position: 95% 50%;
+    }
+}
+@media all and (max-width: 375px)
+{
+    #cover-photo {
+        object-position: 90% 50%;
+    }
+}
+
+
+.intro .title {
+    position: absolute;
+    width: 100%;
+    top: calc(112px + 10%);
+
+}
+
+.intro .title h1 {
+    color:white;
+    font-size: 40px;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 10vh;
+
+}
+
+
+@media all and (max-height: 500px){
+    .intro .title h1 { 
+        max-width: 100%;
+        
+    }
+}
+@media all and (max-height: 360px){
+    .intro .title h1 { 
+        padding-top: 0vh;
+    }
+}
+@media all and (max-height: 700px) and (max-width: 300px) {
+    .intro .title h1 {
+        font-size: 38px;
+    }
+}
+@media all and (max-height: 600px) and (max-width: 374px) {
+    .intro .title h1 {
+        font-size: 38px;
+    }
+}
+@media all and (max-height: 360px ) and (max-width:640px){
+    .intro .title h1 { 
+        font-size: 38px;
+    }
+}
+
+@media all and (max-height: 400px) and (max-width:980px){
+    .intro .title h1 { 
+        font-size: 30px;
+    }
+}
+
+
+.personal-bests {
+    padding-top: 10vh;
+    margin: auto;
+    text-align: center;
+}
+
+.personal-bests h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #262626;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    padding-bottom: 3vh;
+    font-style: italic;
+}
+
+.personal-bests ul {
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    list-style-type: none;
+}
+
+.personal-bests li {
+    padding-top: 1vh;
+}
+
+.personal-bests a {
+    text-decoration: none;
+    color:#262626;
+}
+
+
+.strava-summary {
+    padding-top: 10vh;
+    margin: auto;
+}
+
+.strava-summary h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #262626;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-style: italic;
+}
+
+iframe {
+    margin: auto;
+    display: block;
+}
+
+.goals {
+    padding-top: 10vh;
+    margin: auto;
+    text-align: center;
+}
+
+.goals h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #262626;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    padding-bottom: 3vh;
+    font-style: italic;
+}
+
+.goals ul {
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    list-style-type: none;
+}
+
+.goals li {
+    padding-top: 1vh;
+    color:#262626;
+}
+
+.contacts {
+    display: block;
+    padding: 10vh 10vw;
+    text-align: center;
+}
+
+#head-shot {
+    display: block; 
+    border-radius: 100%;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
+.contacts p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    color: #262626;
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin: auto;
+    max-width: 250px;
+}
+
+.social-links img{
+    height: 50px;
+    
+}
+.social-links a {
+    flex: 1 1 auto;
+}
+
+.email {
+    padding-top: 30px;
+}
+
+.email a {
+    color: #6e6e6e;
+}
