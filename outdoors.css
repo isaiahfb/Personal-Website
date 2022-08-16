@@ -2,14 +2,224 @@
 ** outdoors.html style sheet
 */
 
-.content p {
-    padding-top: 5vh;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-style: italic;
-    color: #262626;
+
+/* intro section */
+
+.intro {
+    display: block;
+    text-align: center;
+}
+#cover-photo {
+    object-fit: cover;
+    object-position: 100% 50%;
+    max-height: calc(100vh - 112px);
+    min-height: calc(100vh - 112px);
     width: 100%;
     height: auto;
-    text-align: center;
+
+}
+
+@media all and (max-width: 414px)
+{
+    #cover-photo {
+        object-position: 95% 50%;
+    }
+}
+@media all and (max-width: 375px)
+{
+    #cover-photo {
+        object-position: 90% 50%;
+    }
+}
+
+
+.intro .title {
+    position: absolute;
+    width: 100%;
+    top: calc(112px + 10%);
+
+}
+
+.intro .title h1 {
+    color:white;
+    font-size: 40px;
+    max-width: 800px;
     margin: auto;
+    padding-top: 10vh;
+
+}
+
+
+@media all and (max-height: 500px){
+    .intro .title h1 { 
+        max-width: 100%;
+        
+    }
+}
+@media all and (max-height: 360px){
+    .intro .title h1 { 
+        padding-top: 0vh;
+    }
+}
+@media all and (max-height: 700px) and (max-width: 300px) {
+    .intro .title h1 {
+        font-size: 38px;
+    }
+}
+@media all and (max-height: 600px) and (max-width: 374px) {
+    .intro .title h1 {
+        font-size: 38px;
+    }
+}
+@media all and (max-height: 360px ) and (max-width:640px){
+    .intro .title h1 { 
+        font-size: 38px;
+    }
+}
+
+@media all and (max-height: 500px) and (max-width:980px){
+    .intro .title h1 { 
+        font-size: 28px;
+    }
+}
+
+/* experience section */
+
+.experience {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 90%;
+    max-width: 700px;
+    align-items: center;
+}
+
+.experience img {
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}
+.experience p {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    text-align: center;
+    color: #262626;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+
+}
+
+.experience h1 {
+    flex: 1 1 100%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #262626;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    padding-bottom: 3vh;
+    font-style: italic;
+   
+}
+
+.experience .item {
+    padding-top: 5vh;
+    flex: 1 1 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Bucket List section */
+
+.bucket-list {
+    padding-top: 10vh;
+    margin: auto;
+    text-align: center;
+}
+
+.bucket-list h1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #262626;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    padding-bottom: 3vh;
+    font-style: italic;
+}
+
+.bucket-list ul {
+    display: inline-block;
+    text-align: center;
+    font-style: italic;
+    list-style-type: none;
+}
+
+.bucket-list li {
+    padding-top: 1vh;
+    color:#262626;
+}
+
+/* Contact me section */
+
+.contacts {
+    display: block;
+    padding: 10vh 10vw;
+    text-align: center;
+}
+
+#head-shot {
+    display: block; 
+    border-radius: 100%;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
+.contacts p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-top: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    color: #262626;
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin: auto;
+    max-width: 250px;
+}
+
+.social-links img{
+    height: 50px;
+    
+}
+.social-links a {
+    flex: 1 1 auto;
+}
+
+.email {
+    padding-top: 30px;
+}
+
+.email a {
+    color: #6e6e6e;
 }
